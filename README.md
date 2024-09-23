@@ -47,7 +47,7 @@ cd your-repo
     pip install -r requirements.txt
  ```
 ### 3. Set up environment variables:
-   The project requires an OpenAI API key to function. Configure your environment variables by creating an **'.env'** file in the parent directory (**'../'**) with the following contents:
+   The project requires an OpenAI API key to function. Configure your environment variables by creating an '.env' file in the parent directory ('../') with the following contents:
    ```json 
    OPENAI_API_KEY=your_openai_api_key_here
    OPENAI_MODEL=gpt-3.5-turbo  # Default model
