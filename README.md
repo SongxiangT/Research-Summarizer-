@@ -2,10 +2,10 @@
 
 This project allows users to fetch research articles from Google Scholar, summarize their abstracts using OpenAI's GPT model, and generate tabulated summaries in a user-defined language. The main aims are:
 
-1. **Break down language barriers** in research papers.
-2. **Improve the efficiency** of research.
+1. **Break down language barriers** in research papers🌍.
+2. **Improve the efficiency** of research⏱️.
 
-## Authors
+## Authors👥
 
 - **Songxiang Tang**  
   Master of Information Systems, University of Melbourne  
@@ -19,7 +19,7 @@ This project allows users to fetch research articles from Google Scholar, summar
   Master of Information Systems, University of Melbourne  
   [chunhaoc1@student.unimelb.edu.au](mailto:chunhaoc1@student.unimelb.edu.au)
 
-## Features
+## Features💡
 
 - Fetches research articles from Google Scholar.
 - Summarizes research abstracts using OpenAI's GPT model.
@@ -27,12 +27,12 @@ This project allows users to fetch research articles from Google Scholar, summar
 - Saves the summarized data and article URLs to CSV and text files.
 - Supports multiple output languages for summaries.
 
-## Prerequisites
+## Prerequisites🧩
 
 - **Python 3.7 or later**
 - **OpenAI API key**
 
-## Setup Instructions
+## Setup Instructions🛠️
 
 ### 1. Clone the Repository
 
@@ -70,7 +70,7 @@ To change the attributes being summarized, modify the `user_defined_attributes` 
 user_defined_attributes = ["Year", "Research Field", "Title", "Methodology", "Results"]
 ```
 #### Changing the Output Language
-To change the language of the summary, simply modify the `summary_language` variable.
+To change the language of the summary, simply modify the `summary_language` variable🌐.
 ```python
 summary_language = "Spanish"
 ```
@@ -78,8 +78,8 @@ Supported languages include English, Spanish, French, Chinese, etc.
 
 ### 6.  Output Formats
 The program generates two output files:<br>
-Table File: The research summaries are saved in table in a CSV file format named `research_articles.csv`.<br>
-Text File: The research summaries and their corresponding URLs are saved in a text file named `research_articles.txt`.<br>
+Table File📊: The research summaries are saved in table in a CSV file format named `research_articles.csv`.<br>
+Text File📄: The research summaries and their corresponding URLs are saved in a text file named `research_articles.txt`.<br>
 
 ### 7.  Troubleshooting
 #### Error: [WinError 5] Access is Denied<br>
@@ -89,7 +89,7 @@ Ensure your `.env` file is correctly placed in the parent directory and contains
 #### Google Scholar MaxTryExceeded Error<br>
 If you encounter the MaxTryExceeded error from the Google Scholar API, it typically occurs when the number of requests exceeds the allowed limit in a short time frame.<br>
 
-### 8.  Contributing
+## .  Contributing🤝
 We welcome contributions! If you would like to contribute to the project:<br>
 Fork the repository.<br>
 Create a new branch for your feature or bug fix.<br>
