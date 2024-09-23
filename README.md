@@ -1,4 +1,4 @@
-# Research Abstract Summarizer
+# Research Abstract Summarizer✨
 
 This project allows users to fetch research articles from Google Scholar, summarize their abstracts using OpenAI's GPT model, and generate tabulated summaries in a user-defined language. The main aims are:
 
@@ -62,7 +62,7 @@ python src/main.py
 ```
 
 ### 5. Customizing Attributes and Language
-You can easily modify the attributes that the GPT model should summarize and the language in which the summary will be returned. This is done in the *'main()'* function within *'main.py'*.
+You can easily modify the attributes that the GPT model should summarize and the language in which the summary will be returned. This is done in the `main()` function within `main.py`.
 
 #### Customizing Attributes <br>
 To change the attributes being summarized, modify the `user_defined_attributes` list.
