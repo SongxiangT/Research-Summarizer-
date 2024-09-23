@@ -1,21 +1,30 @@
 # Research Abstract Summarizer
 
-This project allows users to fetch research articles from Google Scholar, summarize their abstracts using OpenAI's GPT model, and generate tabulated summaries in a user-defined language. The first aim is to break down the language barriers of research papers. The second aim is to improve the efficiency of research.
+This project allows users to fetch research articles from Google Scholar, summarize their abstracts using OpenAI's GPT model, and generate tabulated summaries in a user-defined language. The main aims are:
 
-Authors:<br>
-Songxiang Tang - Master of Information Systems, University of Melbourne<br>
-songxiangt@student.unimelb.edu.au <br>
-Xin Shen - Master of Information Technology, University of Melbourne<br>
-xsshen2@student.unimelb.edu.au <br>
-Chun-Hao Chen - Master of Information Systems, University of Melbourne<br>
-chunhaoc1@student.unimelb.edu.au <br>
+1. **Break down language barriers** in research papers.
+2. **Improve the efficiency** of research.
+
+## Authors
+
+- **Songxiang Tang**  
+  Master of Information Systems, University of Melbourne  
+  [songxiangt@student.unimelb.edu.au](mailto:songxiangt@student.unimelb.edu.au)
+
+- **Xin Shen**  
+  Master of Information Technology, University of Melbourne  
+  [xsshen2@student.unimelb.edu.au](mailto:xsshen2@student.unimelb.edu.au)
+
+- **Chun-Hao Chen**  
+  Master of Information Systems, University of Melbourne  
+  [chunhaoc1@student.unimelb.edu.au](mailto:chunhaoc1@student.unimelb.edu.au)
 
 ## Features
 
 - Fetches research articles from Google Scholar.
 - Summarizes research abstracts using OpenAI's GPT model.
 - Supports user-defined attributes for summary tables.
-- Saves the summarized data and article url to CSV and text files.
+- Saves the summarized data and article URLs to CSV and text files.
 - Supports multiple output languages for summaries.
 
 ## Prerequisites
