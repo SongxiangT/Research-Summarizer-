@@ -1,6 +1,14 @@
 # Research Abstract Summarizer
 
-This project fetches research articles related to a specific topic from Google Scholar, analyzes their abstracts using OpenAI's GPT model, and summarizes the information in a table format in a chosen language.
+This project allows users to fetch research articles from Google Scholar, summarize their abstracts using OpenAI's GPT model, and generate tabulated summaries in a user-defined language. The first aim is to break down the language barriers of research papers. The second aim is to improve the efficiency of research.
+
+Authors:
+Songxiang Tang - Master of Information Systems, University of Melbourne
+songxiangt@student.unimelb.edu.au 
+Xin Shen - Master of Information Technology, University of Melbourne
+xsshen2@student.unimelb.edu.au 
+Chun-Hao Chen - Master of Information Systems, University of Melbourne
+chunhaoc1@student.unimelb.edu.au 
 
 ## Features
 
@@ -36,10 +44,43 @@ cd your-repo
    OPENAI_MODEL=gpt-3.5-turbo  # Default model
  ```
 
-## 4. Run the main file
+### 4. Run the main file
 
 Run the main.py script:
 
 ```bash
 python src/main.py
 ```
+
+### 5. Customizing Attributes and Language
+You can easily modify the attributes that the GPT model should summarize and the language in which the summary will be returned. This is done in the main() function within main.py.
+Customizing Attributes
+To change the attributes being summarized, modify the user_defined_attributes list.
+user_defined_attributes = ["Year", "Research Field", "Title", "Methodology", "Results"]
+
+Changing the Output Language
+To change the language of the summary, simply modify the summary_language variable.
+summary_language = "Spanish"
+
+Supported languages include English, Spanish, French, Chinese, etc.
+
+### 6.  Output Formats
+The program generates two output files:
+CSV File: The research summaries are saved in a CSV file format named research_articles.csv.
+Text File: The research summaries and their corresponding URLs are saved in a text file named research_articles.txt.
+
+### 7.  Troubleshooting
+Error: [WinError 5] Access is Denied
+If you receive a permission error when installing dependencies, try running the command with the --user option or check your administrative privileges.
+API Key Not Found
+Ensure that your .env.example.dotenv file is correctly placed in the parent directory and contains the OPENAI_API_KEY value.
+Google Scholar MaxTryExceeded Error
+If you encounter the MaxTryExceeded error from the Google Scholar API, it typically occurs when the number of requests exceeds the allowed limit in a short time frame.
+
+### 8.  Contributing
+We welcome contributions! If you would like to contribute to the project:
+Fork the repository.
+Create a new branch for your feature or bug fix.
+Submit a pull request with a clear description of the changes.
+
+
