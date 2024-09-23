@@ -25,11 +25,11 @@ Clone the repository to your local machine:
 git clone https://github.com/your-username/your-repo.git
 cd your-repo
 ```
-###2. Install dependencies:
+### 2. Install dependencies:
    ``` bash
     pip install -r requirements.txt
  ```
-###3. Set up environment variables:
+### 3. Set up environment variables:
    The project requires an OpenAI API key to function. Configure your environment variables by creating an env.dotenv file in the parent directory (../) with the following contents:
    ```json 
    OPENAI_API_KEY=your_openai_api_key_here
