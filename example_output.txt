@@ -1,0 +1,35 @@
+| summary | url |
+| ------- | --- |
+| | Year | Research Field         | Title                                                                       | Clinical Application                                                | Methodology                                                    | Outcomes                                               |
+|------|------------------------|-----------------------------------------------------------------------------|--------------------------------------------------------------------|----------------------------------------------------------------|-------------------------------------------------------|
+| 2020 | Neurology              | Computer-Assisted Rehabilitation Environment for PD Patients              | Rehabilitation for Parkinson's Disease patients                     | Study on 31 PD patients undergoing 24 training sessions       | CAREN was found to promote rehabilitation for PD      | | https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10939039/ |
+| | Year | Research Field | Title | Clinical Application | Methodology | Outcomes |
+| ---- | -------------- | ----- | ------------------- | ----------- | -------- |
+| 2020 | Rehabilitation | Computer Assisted Rehabilitation Environment Training | Rehabilitation | Qualitative analysis | Positive impact on rehabilitation outcomes | | https://www.nature.com/articles/s41598-023-29299-0 |
+| | Year | 2020 |
+| Research Field | Virtual Reality in Rehabilitation |
+| Title | Treatment Paradigm in Virtual Reality Environment for Symptom Resolution |
+| Clinical Application | Rehabilitation of patients |
+| Methodology | Two sessions in computer-assisted rehabilitation environment |
+| Outcomes | Successful resolution of symptoms | | https://academic.oup.com/milmed/article-abstract/187/7-8/e1011/6144758 |
+| | Year | Research Field | Title | Clinical Application | Methodology | Outcomes |
+| ---- | -------------- | ----- | ------------------- | ----------- | -------- |
+| N/A | Rehabilitation | Computer-Assisted Rehabilitation Environment (CAREN) | Physical training, clinical rehabilitation, research | VR device | Promising for rehabilitation and research applications. | | https://www.tandfonline.com/doi/abs/10.1080/09593985.2021.1964117 |
+| | Year | Research Field | Title | Clinical Application | Methodology | Outcomes |
+|------|----------------|-------|---------------------|-------------|---------|
+| 2020 | Neurology | Targeted rehabilitative approach for Huntington's disease using CAREN technology | Rehabilitation for HD patients | Advanced CAREN technology with three sessions per week | Improved motor function and quality of life in HD patients | | https://www.mdpi.com/1648-9144/58/7/919 |
+| | Year | Research Field            | Title                               | Clinical Application        | Methodology                | Outcomes                    |
+|------|---------------------------|-------------------------------------|-----------------------------|----------------------------|-----------------------------|
+| 2020 | Rehabilitation            | Designing software for computer-assisted rehabilitation | Improved patient outcomes | Development of software     | Enhanced rehabilitation process | | https://link.springer.com/article/10.1007/s12652-017-0652-8 |
+| | Year | Research Field | Title | Clinical Application | Methodology | Outcomes |
+|------|---------------------|-------|----------------------|--------------|-----------| | https://ieeexplore.ieee.org/abstract/document/9693917/ |
+| | Year | Research Field | Title | Clinical Application | Methodology | Outcomes |
+|------|----------------|-------|----------------------|-------------|----------|
+| 2020 | Rehabilitation | Computer Assisted Rehabilitation Environment (CAREN) system | Alternative to traditional rehabilitation | Use of CAREN system | Provides a motivational and effective alternative to traditional rehabilitation. | | https://meridian.allenpress.com/ijmsc/article-abstract/24/2/63/466375 |
+| | Year | Research Field | Title | Clinical Application | Methodology | Outcomes |
+|------|----------------|-------|---------------------|-------------|---------|
+| 2020 | Rehabilitation | Emerging use of Computer-assisted Rehabilitation Environment (CAREN) | Rehabilitation | Scoping review | Provides an overview of the utilization of CAREN in clinical settings | | https://www.frontiersin.org/articles/10.3389/fbioe.2024.1385280/full |
+| | Year | Research Field | Title | Clinical Application | Methodology | Outcomes |
+|------|----------------|-------|----------------------|-------------|---------|
+| 2020 | Rehabilitation Medicine | Computer assisted rehabilitation environment in modern rehabilitation | Limb rehabilitation | Study | Clarification of advantages in limb rehabilitation | | http://proceedings-online.com/proceedings_series/SH-EDUCATION/ESES2020/icess41031.pdf |
+
