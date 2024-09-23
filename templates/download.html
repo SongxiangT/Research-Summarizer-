@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Download Files</title>
+</head>
+<body>
+    <h1>Files Ready for Download</h1>
+    <p>Here's CSV containing the research summery table</p>
+    <p><a href="{{ url_for('static', filename='research_articles.csv') }}" download>Download CSV File</a></p>
+    <p>Here's text file containing the title and url for check</p>
+    <p><a href="{{ url_for('static', filename='research_articles.txt') }}" download>Download Text File</a></p>
+</body>
+</html>

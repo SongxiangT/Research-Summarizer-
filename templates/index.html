@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Research Summary Application</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f9;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .container {
+            max-width: 800px;
+            width: 100%;
+            background-color: #ffffff;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            margin: 20px;
+        }
+        h1 {
+            color: #333;
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+        .language-selector {
+            margin-bottom: 15px;
+        }
+        .language-selector button {
+            padding: 10px 15px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+            margin-right: 10px;
+            transition: background-color 0.3s ease;
+        }
+        .language-selector button:hover {
+            background-color: #e0e0e0;
+        }
+        form {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+        label {
+            font-weight: bold;
+            color: #555;
+        }
+        input[type="text"],
+        input[type="number"],
+        select {
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            font-size: 16px;
+            width: 100%;
+            box-sizing: border-box;
+        }
+        .year-picker {
+            max-width: 100px;
+            text-align: center;
+        }
+        input[type="submit"] {
+            padding: 15px;
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+            transition: background-color 0.3s ease;
+        }
+        input[type="submit"]:hover {
+            background-color: #0056b3;
+        }
+        .info {
+            margin-top: 20px;
+            color: #666;
+            font-size: 14px;
+        }
+        .developer {
+            margin-top: 20px;
+            text-align: center;
+            color: #333;
+            font-size: 14px;
+        }
+        .instructions {
+    margin-top: 30px;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.instructions h2 {
+    color: #333;
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+
+.instructions ol {
+    margin-left: 20px;
+    color: #555;
+}
+
+.instructions p {
+    margin-top: 10px;
+    color: #666;
+    font-size: 14px;}
+
+    #howToUseBtn {
+    padding: 10px 15px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+    margin-top: 20px;
+}
+
+#howToUseBtn:hover {
+    background-color: #0056b3;
+}
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1 id="app-title">Research Summary Application</h1>
+        <div class="language-selector">
+            <button id="btn-en">English</button>
+            <button id="btn-zh">中文</button>
+        </div>
+        <form method="POST">
+            <label for="topic" id="topic-label">Research Topic: (Please input in English)</label>
+            <input type="text" id="topic" name="topic" required placeholder="Enter the research topic">
+
+            <label for="start_year" id="start-year-label">Start Year:</label>
+            <input type="text" id="start_year" name="start_year" class="year-picker" placeholder="YYYY" required>
+
+            <label for="end_year" id="end-year-label">End Year:</label>
+            <input type="text" id="end_year" name="end_year" class="year-picker" placeholder="YYYY" required>
+
+            <label for="max_results" id="max-results-label">Max Results:</label>
+            <input type="number" id="max_results" name="max_results" min="1" max="150" required placeholder="Enter max results">
+
+            <label for="language" id="language-select-label">Summery language:</label>
+            <select id="language" name="language">
+                <option value="English">English</option>
+                <option value="Spanish">Spanish</option>
+                <option value="French">French</option>
+                <option value="German">German</option>
+                <option value="Chinese">Chinese</option>
+                <option value="Japanese">Japanese</option>
+                <option value="Korean">Korean</option>
+                <option value="Portuguese">Portuguese</option>
+            </select>
+
+            <label for="attributes" id="attributes-label">Attributes (comma-separated):</label>
+            <input type="text" id="attributes" name="attributes" placeholder='Enter attributes (e.g., "Year, Research Field, Title")' value="Year, Research Field, Title, Clinical Application, Methodology, Outcomes">
+
+            <input type="submit" value="Run">
+        </form>
+
+        <p id="api-warning">Due to API charge issue, the max result is 150</p>
+        <p id="note">Note: Frequent requests may result in temporary bans by the Google Scholar API. Please use responsibly.</p>
+
+        <div class="developer">
+            <p>Developed by Songxiang Tang. University of Melbourne, CAREN lab.</p>
+        </div>
+    </div>
+    <script>
+        // 切换语言功能
+        const btnEn = document.getElementById('btn-en');
+        const btnZh = document.getElementById('btn-zh');
+
+        const texts = {
+            en: {
+                title: "Research Summary Application",
+                topicLabel: "Research Topic:",
+                startYearLabel: "Start Year:",
+                endYearLabel: "End Year:",
+                maxResultsLabel: "Max Results:",
+                languageSelectLabel: "Language:",
+                attributesLabel: "Attributes (comma-separated):",
+                note: "Note: Frequent requests may result in temporary bans by the Google Scholar API. Please use responsibly.",
+                apiWarning: "Due to API charge issue, the max result is 150",
+            },
+            zh: {
+                title: "研究论文总结应用",
+                topicLabel: "研究主题：",
+                startYearLabel: "开始年份：",
+                endYearLabel: "结束年份：",
+                maxResultsLabel: "最大结果：",
+                languageSelectLabel: "语言：",
+                attributesLabel: "属性（用逗号分隔）：",
+                note: "注意：频繁请求可能会导致 Google Scholar API 的临时封禁。请负责任地使用。",
+                apiWarning: "由于 API 收费问题，最大结果为 150",
+            }
+        };
+
+        btnEn.addEventListener('click', () => {
+            document.getElementById('app-title').innerText = texts.en.title;
+            document.getElementById('topic-label').innerText = texts.en.topicLabel;
+            document.getElementById('start-year-label').innerText = texts.en.startYearLabel;
+            document.getElementById('end-year-label').innerText = texts.en.endYearLabel;
+            document.getElementById('max-results-label').innerText = texts.en.maxResultsLabel;
+            document.getElementById('language-select-label').innerText = texts.en.languageSelectLabel;
+            document.getElementById('attributes-label').innerText = texts.en.attributesLabel;
+            document.getElementById('note').innerText = texts.en.note;
+            document.getElementById('api-warning').innerText = texts.en.apiWarning;
+        });
+
+        btnZh.addEventListener('click', () => {
+            document.getElementById('app-title').innerText = texts.zh.title;
+            document.getElementById('topic-label').innerText = texts.zh.topicLabel;
+            document.getElementById('start-year-label').innerText = texts.zh.startYearLabel;
+            document.getElementById('end-year-label').innerText = texts.zh.endYearLabel;
+            document.getElementById('max-results-label').innerText = texts.zh.maxResultsLabel;
+            document.getElementById('language-select-label').innerText = texts.zh.languageSelectLabel;
+            document.getElementById('attributes-label').innerText = texts.zh.attributesLabel;
+            document.getElementById('note').innerText = texts.zh.note;
+            document.getElementById('api-warning').innerText = texts.zh.apiWarning;
+        });
+
+        document.querySelectorAll('.year-picker').forEach(input => {
+            input.addEventListener('input', function() {
+                this.value = this.value.replace(/[^0-9]/g, '').slice(0, 4);
+            });
+        });
+    </script>
+
+<script>
+    document.getElementById('howToUseBtn').addEventListener('click', function() {
+        const instructions = document.getElementById('instructions');
+        if (instructions.style.display === 'none') {
+            instructions.style.display = 'block';
+        } else {
+            instructions.style.display = 'none';
+        }
+    });
+</script>
+</body>
+</html>
