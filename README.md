@@ -2,13 +2,13 @@
 
 This project allows users to fetch research articles from Google Scholar, summarize their abstracts using OpenAI's GPT model, and generate tabulated summaries in a user-defined language. The first aim is to break down the language barriers of research papers. The second aim is to improve the efficiency of research.
 
-Authors:
-Songxiang Tang - Master of Information Systems, University of Melbourne
-songxiangt@student.unimelb.edu.au 
-Xin Shen - Master of Information Technology, University of Melbourne
-xsshen2@student.unimelb.edu.au 
-Chun-Hao Chen - Master of Information Systems, University of Melbourne
-chunhaoc1@student.unimelb.edu.au 
+Authors:<br>
+Songxiang Tang - Master of Information Systems, University of Melbourne<br>
+songxiangt@student.unimelb.edu.au <br>
+Xin Shen - Master of Information Technology, University of Melbourne<br>
+xsshen2@student.unimelb.edu.au <br>
+Chun-Hao Chen - Master of Information Systems, University of Melbourne<br>
+chunhaoc1@student.unimelb.edu.au <br>
 
 ## Features
 
@@ -65,22 +65,22 @@ summary_language = "Spanish"
 Supported languages include English, Spanish, French, Chinese, etc.
 
 ### 6.  Output Formats
-The program generates two output files:
-CSV File: The research summaries are saved in a CSV file format named research_articles.csv.
-Text File: The research summaries and their corresponding URLs are saved in a text file named research_articles.txt.
+The program generates two output files:<br>
+CSV File: The research summaries are saved in a CSV file format named research_articles.csv.<br>
+Text File: The research summaries and their corresponding URLs are saved in a text file named research_articles.txt.<br>
 
 ### 7.  Troubleshooting
-Error: [WinError 5] Access is Denied
-If you receive a permission error when installing dependencies, try running the command with the --user option or check your administrative privileges.
-API Key Not Found
-Ensure that your .env.example.dotenv file is correctly placed in the parent directory and contains the OPENAI_API_KEY value.
-Google Scholar MaxTryExceeded Error
-If you encounter the MaxTryExceeded error from the Google Scholar API, it typically occurs when the number of requests exceeds the allowed limit in a short time frame.
+#### Error: [WinError 5] Access is Denied<br>
+If you receive a permission error when installing dependencies, try running the command with the --user option or check your administrative privileges.<br>
+#### API Key Not Found<br>
+Ensure that your .env.example.dotenv file is correctly placed in the parent directory and contains the OPENAI_API_KEY value.<br>
+#### Google Scholar MaxTryExceeded Error<br>
+If you encounter the MaxTryExceeded error from the Google Scholar API, it typically occurs when the number of requests exceeds the allowed limit in a short time frame.<br>
 
 ### 8.  Contributing
-We welcome contributions! If you would like to contribute to the project:
-Fork the repository.
-Create a new branch for your feature or bug fix.
-Submit a pull request with a clear description of the changes.
+We welcome contributions! If you would like to contribute to the project:<br>
+Fork the repository.<br>
+Create a new branch for your feature or bug fix.<br>
+Submit a pull request with a clear description of the changes.<br>
 
 
